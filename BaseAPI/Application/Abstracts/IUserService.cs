@@ -11,8 +11,8 @@ namespace BaseAPI.Application.Abstracts
         Task<IEnumerable<StudentDto>> GetStudnets();
         Task<bool> AddStudent(StudentDto studentInfo);
         Task<StudentDto> UpdateStudent(StudentDto studentInfo);
-        Task<bool> DeleteStudent(Guid id);
-        Task<StudentDto> GetStudentById(Guid id);
+        Task<bool> DeleteStudent(Guid stuId);
+        Task<StudentDto> GetStudentById(Guid stuId);
 
     }
 }

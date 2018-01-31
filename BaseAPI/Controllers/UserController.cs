@@ -32,21 +32,21 @@ namespace BaseAPI.Controllers
         /// Adds the student.
         /// </summary>
         /// <returns>The student.</returns>
-        /// <param name="userInfo">User info.</param>
+        /// <param name="studentInfo">Student info.</param>
         [HttpPost]
-        public async Task<IActionResult> AddStudent([FromBody] StudentDto userInfo)
+        public async Task<IActionResult> AddStudent([FromBody] StudentDto studentInfo)
         {
-            return Ok(_userService.AddStudent(userInfo));
+            return Ok(await _userService.AddStudent(studentInfo));
         }
 
         /// <summary>
         /// Updates the studnet.
         /// </summary>
         /// <returns>The studnet.</returns>
-        /// <param name="userInfo">User info.</param>
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateStudnet([FromBody] StudentDto userInfo){
-            return Ok(await _userService.UpdateStudent(userInfo));
+        /// <param name="studentInfo">Student info.</param>
+        [HttpPut()]
+        public async Task<IActionResult> UpdateStudnet([FromBody]StudentDto studentInfo){
+            return Ok(await _userService.UpdateStudent(studentInfo));
         }
 
         /// <summary>
