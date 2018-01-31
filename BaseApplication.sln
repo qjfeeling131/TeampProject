@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAPI", "BaseAPI\BaseAPI.csproj", "{F929F806-3C1E-42B6-B08E-4BB0121A4858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F929F806-3C1E-42B6-B08E-4BB0121A4858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F929F806-3C1E-42B6-B08E-4BB0121A4858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F929F806-3C1E-42B6-B08E-4BB0121A4858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F929F806-3C1E-42B6-B08E-4BB0121A4858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
