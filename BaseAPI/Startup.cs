@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using BaseAPI.Application;
@@ -12,12 +9,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
 using AutoMapper;
-using BaseAPI.Filter;
 using BaseAPI.Application.Abstracts;
 
 namespace BaseAPI
@@ -55,7 +49,6 @@ namespace BaseAPI
             services.AddScoped<BaseAPI.Filter.ExceptionFilter>();
             services.AddDbContext<BaseContext>(options => options.UseMySql(Configuration.GetSection("SqlConnection")["Default"]));
             //TODO:use Microsoft DI
-            //services.AddTransient(typeof(IOrderService), typeof(OrderService));
             //services.AddScoped(typeof(IUserService), typeof(UserSerive));
 
             //TODO:use Autofac
